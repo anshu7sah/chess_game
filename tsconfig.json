@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES2020", // or ES2022, ESNext – depends on Node version
+    "module": "ESNext", // important: ensures ESM output
+    "moduleResolution": "node", // resolves node-style imports
+    "esModuleInterop": true, // allows default import from CommonJS modules
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "outDir": "./dist", // compiled files output here
+    "rootDir": "./src" // your source files
+    // "baseUrl": "./",
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}
