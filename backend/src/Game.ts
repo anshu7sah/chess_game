@@ -43,7 +43,7 @@ export class Game {
     if (this.totalMoves % 2 === 0 && socket !== this.player1) {
       return;
     }
-    if (this.totalMoves % 2 === 1 && socket != this.player2) {
+    if (this.totalMoves % 2 === 1 && socket !== this.player2) {
       return;
     }
 

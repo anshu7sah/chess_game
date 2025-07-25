@@ -4,6 +4,7 @@ import { createServer } from "http";
 import { Server } from "socket.io";
 import cors from "cors";
 import { GameManager } from "./GameManager.js";
+import { Game } from "./Game.js";
 
 const app = express();
 
