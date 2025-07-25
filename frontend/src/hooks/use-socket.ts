@@ -41,3 +41,39 @@ export const useSocket = () => {
 
   return [socket, board];
 };
+
+// import { useEffect, useRef } from "react";
+// import { io } from "socket.io-client";
+
+// export const useSocket = () => {
+//   const socketRef = useRef(null);
+
+//   useEffect(() => {
+//     const socket = io("http://localhost:5000", {
+//       path: "/socket",
+//     });
+
+//     socketRef.current = socket;
+
+//     socket.on("connect", () => {
+//       console.log("Connected to socket server");
+//     });
+
+//     socket.on("disconnect", () => {
+//       console.log("disconnectedd from the socket server");
+//     });
+
+//     socket.on("anshu", (data) => {
+//       console.log(data);
+//     });
+
+//     socket.on("ranjan", (data) => {
+//       console.log(data);
+//     });
+//     return () => {
+//       socket.disconnect();
+//     };
+//   }, []);
+
+//   return socketRef;
+// };
