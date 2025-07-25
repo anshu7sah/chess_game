@@ -1,4 +1,7 @@
+import { useNavigate } from "react-router-dom";
+
 const Homepage = () => {
+  const navigate = useNavigate();
   return (
     <div className="h-screen">
       <div className="w-[1500px] h-full mx-auto">
@@ -15,7 +18,10 @@ const Homepage = () => {
                   </h1>
                 </div>
                 <div>
-                  <button className="bg-[#35CBF6] text-black px-15 py-2 text-2xl hover:shadow-lg hover:shadow-[#35CBF6] transition-all rounded-2xl">
+                  <button
+                    className="bg-[#35CBF6] text-black px-15 py-2 text-2xl hover:shadow-lg hover:shadow-[#35CBF6] transition-all rounded-2xl"
+                    onClick={() => navigate("/game")}
+                  >
                     Play Game
                   </button>
                 </div>
